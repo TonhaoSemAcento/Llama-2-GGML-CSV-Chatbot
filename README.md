@@ -21,7 +21,7 @@ The **Llama-2-GGML-CSV-Chatbot** is a conversational tool powered by a fine-tune
    ```
 2. **Install Dependencies:**
    ```bash
-   pip install -r requirements.txt
+   pip install streamlit langchain torch sentence-transformers faiss-cpu ctransformers pandas
    ```
 
 ### Download the Llama 2 Model:
@@ -42,7 +42,7 @@ Download the Llama 2 model file named `llama-2-7b-chat.ggmlv3.q4_0.bin` from the
 
 1. **Run the Application:**
    ```bash
-   streamlit run app.py
+   streamlit run main.py --server.port 8080
    ```
 2. **Access the Application:**
    - Once the application is running, access it through the provided URL.
